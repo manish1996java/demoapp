@@ -1,0 +1,7 @@
+<div class="d-flex flex-column justify-content-center h-100" style="position: fixed;right: 10px;">
+  <div routerLink [class.linkactive]="(activeFragment | async)===''" [fragment]="''" class="dot"></div>
+  <div routerLink [class.linkactive]="(activeFragment | async)==='technology'" [fragment]="'technology'" class="dot"></div>
+  <div routerLink [class.linkactive]="(activeFragment | async)==='service'" [fragment]="'service'" class="dot"></div>
+  <div routerLink [class.linkactive]="(activeFragment | async)==='portfolio'" [fragment]="'portfolio'" class="dot"></div>
+  <div routerLink [class.linkactive]="(activeFragment | async)==='contact'" [fragment]="'contact'" class="dot"></div>
+</div>

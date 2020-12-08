@@ -1,0 +1,15 @@
+<mat-toolbar class="header d-flex" style="position: sticky;top:0;background-color: white;z-index: 1;">
+  <div class="log">
+    header
+  </div>
+  <div class="space-box" style="flex:1">
+
+  </div>
+  <div class="d-flex">
+    <button mat-button [class.linkactive]="(activeFragment | async)===''" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" [fragment]="''"><span class="text-uppercase">About</span></button>
+    <button mat-button [class.linkactive]="(activeFragment | async)==='technology'" [routerLink]="['']" [fragment]="'technology'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ><span class="text-uppercase">Technology</span></button>
+    <button mat-button [class.linkactive]="(activeFragment | async)==='service'" [routerLink]="['']" [fragment]="'service'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><span class="text-uppercase">Service</span></button>
+    <button mat-button [class.linkactive]="(activeFragment | async)==='portfolio'" [routerLink]="['']" [fragment]="'portfolio'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"> <span class="text-uppercase">portfolio</span></button>
+    <button mat-button [class.linkactive]="(activeFragment | async)==='contact'" [routerLink]="['']" [fragment]="'contact'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"> <span class="text-uppercase">Contact</span></button>
+  </div>
+</mat-toolbar>
